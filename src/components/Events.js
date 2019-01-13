@@ -6,8 +6,10 @@ import {
 } from 'reactstrap';
 
 
-const Events = ({ events }) => {
-    console.log(events)
+const Events = ({ events, genre }) => {
+    if(genre) {
+        events = events.filter(event => event.classifications[0].genre.name === genre)  //filter by genre if genre is selected
+    }
     return (
         <div className='cardContainer'>
         {

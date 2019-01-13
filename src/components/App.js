@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import axios from 'axios';
-import Nav from './Nav';
+import NavBar from './NavBar';
 import Events from './Events';
 import API_KEY from '../../apiKey';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 
 class App extends Component {
@@ -18,13 +19,21 @@ class App extends Component {
             .then(events => this.setState({ events }))
     }
     render() {
-        //const events = this.state.events.slice(0,8);    //shorten the event array to the first 8
         const { events } = this.state;
+        let genres = [];
+        events.map(event => {
+            let genre = event.classifications[0].genre.name;
+            if(genres.indexOf(genre) === -1) {
+                genres.push(genre)   //compiling all the different genres
+            }
+        })
         return(
-            <Fragment>
-                <Nav/>
-                <Events events={ events }/>
-            </Fragment>
+            <Router>
+                <Fragment>
+                    <NavBar genres={ genres }/>
+                    <Route path='/:genre?' render={({ match }) => <Events events={ events } genre={ match.params.genre }/>}/>
+                </Fragment>
+            </Router>
         )
     }
 }
