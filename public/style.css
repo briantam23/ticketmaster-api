@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+    .cardContainer {
+        display: flex;
+        flex-flow: row wrap;
+        /* justify-content: space-around; */
+    }
+    .card {
+        width: 768px;
+    }
+} 
