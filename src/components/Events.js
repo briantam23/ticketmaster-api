@@ -19,7 +19,7 @@ const Events = ({ events, genre }) => {
                     <CardBody>
                         <CardTitle>
                             <h3>
-                                <strong>{ event.name }</strong>
+                                <strong><a href={ event.url }>{ event.name }</a></strong>
                             </h3>
                         </CardTitle>
                         <hr/>
