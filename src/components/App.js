@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
 import Events from './Events';
-import API_KEY from '../../apiKey';
+import API_KEY from '../../apiKey'; 
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 

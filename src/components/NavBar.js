@@ -11,7 +11,8 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem
+    DropdownItem,
+    Badge
 } from 'reactstrap';
 
 class NavBar extends Component {
@@ -37,7 +38,7 @@ class NavBar extends Component {
                         <Nav className="ml-auto" navbar>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
-                                    Genres
+                                    Genres <Badge color='dark'>{ genres.length }</Badge>
                                 </DropdownToggle>
                                 <DropdownMenu right>
                                 {

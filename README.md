@@ -1,6 +1,6 @@
 # Carver Edison Coding Challenge
 
-An events app deployed to https://carver-edison-coding-challenge.herokuapp.com!
+An events app.
 
 ## Setting up
 

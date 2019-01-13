@@ -15,18 +15,22 @@ const Events = ({ events, genre }) => {
         {
             events.map(event => event.priceRanges ? (
                 <Card key={ event.id } className='card'>
-                    <CardImg top width="100%" src={ event.images[6].url } alt="Card image cap" />
+                    <CardImg top width="100%" src={ event.images[5].url } alt="Card image cap" />
                     <CardBody>
                         <CardTitle>
-                            <strong>{ event.name }</strong>
+                            <h3>
+                                <strong>{ event.name }</strong>
+                            </h3>
                         </CardTitle>
                         <hr/>
                         <CardSubtitle>
-                            { 'Date: ' + event.dates.start.localDate }
+                            <strong>Date: </strong>
+                            { event.dates.start.localDate }
                         </CardSubtitle>
                         <hr/>
                         <CardSubtitle>
-                            { 'Price Range: $ ' + event.priceRanges[0].min + ' - $ ' + event.priceRanges[0].max }
+                            <strong>Price Range: </strong>
+                            { '$' + event.priceRanges[0].min.toFixed(2) + ' - $' + event.priceRanges[0].max.toFixed(2) }
                         </CardSubtitle>
                     </CardBody>
                     <CardFooter className='text-muted'/>
