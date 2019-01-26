@@ -1,6 +1,4 @@
-# Carver Edison Coding Challenge
-
-An events app.
+# Ticketmaster Events App
 
 ## Setting up
 
