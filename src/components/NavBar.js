@@ -52,6 +52,11 @@ class NavBar extends Component {
                                 }
                                 </DropdownMenu>
                             </UncontrolledDropdown>
+                            <NavItem>
+                                <NavLink>
+                                    <Link to={ '/cart' }>Cart</Link>
+                                </NavLink>
+                            </NavItem>
                         </Nav>
                     </Collapse>
                 </Navbar>
