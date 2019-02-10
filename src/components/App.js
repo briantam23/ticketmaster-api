@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
 import Events from './Events';
+import EventDetail from './EventDetail';
 import Cart from './Cart';
 import API_KEY from '../../apiKey'; 
 import { HashRouter as Router, Route } from 'react-router-dom';
@@ -32,7 +33,9 @@ class App extends Component {
             <Router>
                 <Fragment>
                     <NavBar genres={ genres }/>
-                    <Route path='/:genre?' render={({ match }) => <Events events={ events } genre={ match.params.genre }/>}/>
+                    <Route exact path='/' render={ () => <Events events={ events }/> }/>
+                    <Route path='/genre/:genreName?' render={({ match }) => <Events events={ events } genre={ match.params.genreName }/>}/>
+                    <Route path='/event/:eventId' render={({ match, history }) => <EventDetail history={ history } eventId={ match.params.eventId }/>}/>
                     <Route path='/cart' render = {({ history, match }) => <Cart history={ history } /> } />
                 </Fragment>
             </Router>

@@ -44,7 +44,7 @@ class NavBar extends Component {
                                 {
                                     genres.map((genre, idx) => (
                                         <DropdownItem key={ idx }>
-                                            <Link to={`/${genre}`}>
+                                            <Link to={`/genre/${genre}`}>
                                                 { genre }
                                             </Link> 
                                         </DropdownItem>
