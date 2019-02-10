@@ -53,8 +53,8 @@ class NavBar extends Component {
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                             <NavItem>
-                                <NavLink>
-                                    <Link to={ '/cart' }>Cart</Link>
+                                <NavLink href='/#/cart'>
+                                    Cart
                                 </NavLink>
                             </NavItem>
                         </Nav>
