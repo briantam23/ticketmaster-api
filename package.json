@@ -7,7 +7,7 @@
     "start": "node ./server/index.js",
     "webpack": "./node_modules/webpack/bin/webpack.js",
     "build": "npm run webpack",
-    "start:dev": "npm run build & DATABASE_URL=postgres://localhost/acme-store & JWT_SECRET='foo' nodemon server/index.js --ignore dist --ignore src"
+    "start:dev": "npm run build & nodemon server/index.js --ignore dist --ignore src"
   },
   "keywords": [],
   "author": "",
