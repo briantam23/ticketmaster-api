@@ -1,3 +1,5 @@
+const Dotenv = require('dotenv-webpack');
+
 module.exports = {
     devtool: 'source-map',
     output: {
@@ -17,5 +19,6 @@ module.exports = {
           use: ['style-loader', 'css-loader']
         }
       ]
-    }
+    },
+    plugins: [new Dotenv({ systemvars: true })]
 };

@@ -1,5 +1,5 @@
 # Ignore API Key
-apiKey.js
+.env
 
 # Ignore all node_modules
 node_modules
