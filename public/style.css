@@ -1,10 +1,20 @@
-@media (min-width: 768px) {
-    .cardContainer {
-        display: flex; 
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    .card {
-        width: 768px;   /* so the image doesn't expand too much */
-    }
-} 
+.cardContainer {
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+}
+.card { 
+    background-color: white;
+    width: 785px;  /* so the image doesn't expand too much */
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 785px; 
+    max-width: 100%;
+    height: auto;
+    width: auto\9;  /* ie8 */
+}

@@ -15,7 +15,7 @@ const Events = ({ events, genre }) => {
         {
             events.map(event => event.priceRanges ? (
                 <Card key={ event.id } className='card'>
-                    <CardImg top width="100%" src={ event.images[5].url } alt="Card image cap" />
+                    <CardImg top width="100%" src={ event.images[5].url } alt="Card image cap" className='eventImg'/>
                     <CardBody>
                         <CardTitle>
                             <h3>
