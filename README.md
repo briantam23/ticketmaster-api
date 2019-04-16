@@ -1,4 +1,4 @@
-# Ticketmaster Events App
+# 🎥 Ticketmaster Events App
 
 ## Setting up
 
