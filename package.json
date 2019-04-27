@@ -1,7 +1,24 @@
 {
-  "name": "carver-edison-coding-challenge",
+  "name": "ticketmaster-api",
+  "author": {
+    "name": "Brian Tam",
+    "email": "briantam23@gmail.com",
+    "url": "https://briantam23.github.io"
+  },
+  "contributors": [
+    {
+      "name": "Brian Tam",
+      "email": "briantam23@gmail.com",
+      "url": "https://briantam23.github.io"
+    }
+  ],
+  "homepage": "https://btam-ticketmaster-app.herokuapp.com/",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Single Page App created with React, Express, & the Ticketmaster API.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briantam23/ticketmaster-api.git"
+  },
   "main": "server/index.js",
   "scripts": {
     "start": "node ./server/index.js",
@@ -9,8 +26,12 @@
     "build": "npm run webpack",
     "start:dev": "npm run build & nodemon server/index.js --ignore dist --ignore src"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "express",
+    "axios",
+    "bootstrap"
+  ],
   "license": "ISC",
   "babel": {
     "presets": [
