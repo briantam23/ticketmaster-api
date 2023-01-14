@@ -62,7 +62,7 @@
     "dotenv-webpack": "^1.7.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.3.12"
   },
   "heroku-run-build-script": true
 }
